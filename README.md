@@ -3,7 +3,7 @@ The hologram colour change has 2 variables to change the speed individually of t
 
 <img width="939" height="540" alt="image" src="https://github.com/user-attachments/assets/1a0934b8-5009-43a5-bf14-98ce16bfe05e" />
 
-How it works is that to loop back and fourth, it uses a sine so that instead of looping back and cutting to the beggining, once it reaches the second colour, it transitions back to the first colour.
+How it works is that to loop back and fourth, it uses a sine so that instead of looping back and cutting to the beggining, once it reaches the second colour, it transitions back to the first colour. It multiplies 0.5f, as it is the midground from 0 - 1, and it is multiplied by 6.28318530718, because it is 2pi, which is the standard speed for sin waves per second.
 It then takes that variable of the sine change speed, and uses that in a lerp, so that it can lerp between the 2 colours, and output the colour transitioning.
 It does the same thing for both the Lines and Rim.
 
