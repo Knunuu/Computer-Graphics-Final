@@ -1,3 +1,5 @@
+Unfortunently, I was not aware of this, but Unity changed the tag for the renderpipeline from "UniversalRenderPipeline" to "UniversalPipeline". That means that all of the shaders appear purple when built, and I was not aware of this issue until affter the time limit. I can solve this issue if I go in each shader and apply the syntax changes, but at least it works in the editor.
+
 Using the advance hologram shader as a base, i made it so that overtime, it will swap back and fourth between 2 different colours, each for the lines, and rim effect. The holograms are applied to the walls of the stage, because in the base game, they have similar features.
 The hologram colour change has 2 variables to change the speed individually of the lines and rim, but it is recommend to keep them the same, as they will desync. I made the transitioning colours into colour palettes so they match each other, so having them desync could look odd, unless all 4 colours match well.
 
